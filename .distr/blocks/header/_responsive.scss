@@ -1,0 +1,53 @@
+.header {
+	@media (max-width: 1199px) {
+
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			width: auto;
+		}
+
+		&__contacts {
+			flex: inherit;
+			width: auto;
+			margin-right: 15px;
+			display: none;
+		}
+
+		&__phone {
+			margin-right: 0;
+			span {
+				display: none;
+			}
+			&:before {
+				content: "";
+				background: url('../img/footer/phone.svg') no-repeat center center/cover;
+				width: 25px;
+				height: 25px;
+				display: block;
+				margin-top: -4px;
+			}
+		}
+
+		&__hamburger {
+			margin-left: auto;
+			display: block;
+		}
+
+		&__button {
+			display: none;
+		}
+
+		&__menu {
+			display: none;
+		}
+
+	}
+
+	@media (max-width: 991px) {
+
+		
+	}
+	@media (max-width: 768px) {
+	}
+}

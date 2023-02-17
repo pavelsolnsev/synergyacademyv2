@@ -1,0 +1,131 @@
+.reviews {
+    @media (max-width: 1199px) {
+        padding: 40px 0;
+        &__content {
+            padding: 35px 35px 35px 80px;
+            p {
+                font-size: 20px;
+                line-height: 135%;
+                &:after {
+                    top: 20px;
+                }
+            }
+        }
+
+        &__item {
+            img {
+                max-width: 65px;
+                margin: 0 auto 10px auto;
+            }
+            &-title {
+                font-size: 12px;
+                line-height: 108%;
+                margin-bottom: 5px;
+            }
+            &-subtitle {
+                font-size: 10px;
+                line-height: 115%;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+    }
+    @media (max-width: 767px) {
+        background: url("../img/reviews/fon-mob.png") no-repeat 0 0 / contain, $red;
+        padding: 40px 0 65px;
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            .slick-list,
+            slick-track {
+                display: block;
+            }
+
+            .slick-list {
+                margin: 0 -10px;
+            }
+            .slick-slide {
+                margin: 0 10px;
+            }
+            .slick-dots {
+                bottom: -40px;
+            }
+            .slick-dots li {
+                margin: 0 12px;
+                width: 15px;
+                height: 15px;
+            }
+
+            .slick-dots li.slick-active button::before {
+                background: #fff;
+            }
+
+            .slick-dots li button::before {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 15px;
+                height: 15px;
+                content: "";
+                opacity: 1;
+                background: rgba(255, 255, 255, 0.69);
+                border-radius: 100%;
+            }
+        }
+
+        &__item {
+            img {
+                max-width: 90px;
+            }
+            &-title {
+                font-size: 18px;
+            }
+            &-subtitle {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &-content {
+                display: block;
+                background: #fff;
+                border-radius: 10px;
+                padding: 55px 15px 15px 15px;
+                position: relative;
+                margin-bottom: 30px;
+                &::after {
+                    content: "";
+                    position: absolute; /* Абсолютное позиционирование */
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    bottom: -20px; /* Положение треугольника */
+                    border: 10px solid transparent; /* Прозрачные границы */
+                    border-top: 10px solid #fff; /* Добавляем треугольник */
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #18191f;
+                    text-align: left;
+                    position: relative;
+                    &:after {
+                        content: "“";
+                        font-weight: 800;
+                        font-size: 72px;
+                        color: $red;
+                        position: absolute;
+                        left: 0px;
+                        top: -20px;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            &.current {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+    }
+}

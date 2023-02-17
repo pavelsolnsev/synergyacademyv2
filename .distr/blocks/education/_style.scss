@@ -1,0 +1,76 @@
+.education {
+    padding: 76px 0 55px;
+    &__title {
+        margin-bottom: 46px;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+    }
+    &__item {
+        &:nth-child(2) {
+            .education__item-number {
+                &:after {
+                    content: url("../img/education/line-2.svg");
+                    bottom: inherit;
+                    top: 10px;
+                }
+            }
+        }
+        &:nth-child(4) {
+            .education__item-number {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &-number {
+            position: relative;
+            width: 72px;
+            height: 72px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 26px;
+            div {
+                background: linear-gradient(143.77deg, #ffa9be 14.13%, #fa3e60 85.58%);
+                opacity: 0.2;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 100px;
+            }
+            span {
+                font-weight: 700;
+                font-size: 36px;
+                color: $red;
+                font-family: $Inter;
+            }
+
+            &:after {
+                content: url("../img/education/line-1.svg");
+                position: absolute;
+                left: 94px;
+                bottom: 0;
+            }
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 117%;
+        color: #18191f;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #18191f;
+    }
+}

@@ -1,0 +1,45 @@
+.document {
+    @media (max-width: 1199px) {
+        padding: 20px 0 120px;
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__list {
+            max-width: 340px;
+            li {
+                font-size: 20px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            max-width: 358px;
+            right: -60px;
+            top: 130px;
+        }
+    }
+    @media (max-width: 991px) {
+    }
+    @media (max-width: 767px) {
+        padding: 20px 0 60px;
+        &__box {
+            display: block;
+        }
+
+        &__title {
+            white-space: inherit;
+        }
+
+        &__content {
+            margin-bottom: 40px;
+        }
+
+        &__img {
+            position: static;
+        }
+    }
+    @media (max-width: 575px) {
+    }
+}

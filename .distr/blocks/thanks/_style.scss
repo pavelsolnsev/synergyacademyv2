@@ -1,0 +1,40 @@
+.thanks {
+    height: 100vh;
+    background: url('../img/thanks/woman.png') no-repeat right bottom,
+    url('../img/thanks/fon.png') no-repeat bottom center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__box {
+        max-width: 510px;
+        width: 100%;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 56px;
+        color: #2c2c2c;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #2c2c2c;
+        margin-bottom: 65px;
+    }
+    &__links{
+        display: flex;
+        gap: 27px;
+        width: 580px;
+    }
+    &__button {
+        max-width: 270px;
+        height: 70px;
+        &._green{
+            width: 275px;
+            background: #48EA65;
+            padding: 0 6px 0 0;
+        }
+    }
+}

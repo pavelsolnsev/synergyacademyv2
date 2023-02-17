@@ -1,0 +1,23 @@
+// @include adaptiv-value("padding", 50, 20, 0);
+$maxWidth: 1920;
+$tabWidth: 1200;
+$mobWidth: 767;
+
+@mixin adaptiv-value($property, $descSize, $tabSize, $mobSize) {
+    $addSize: $descSize - $mobSize;
+    $addSize2: $descSize - $tabSize;
+
+    @media (min-width: #{$maxWidth + px}) {
+        #{$property}: $descSize + px;
+	}
+    @media (max-width: #{$maxWidth + px}) {
+        #{$property}: calc(#{$descSize + px} + #{$addSize2} * ((100vw - 1920px) / #{$maxWidth - 360}));
+	}
+    @media (max-width: #{$tabWidth + px}) {
+        #{$property}: calc(#{$tabSize + px} + #{$addSize2} * ((100vw - 992px) / #{$maxWidth - 992}));
+    }
+
+    @media (max-width: #{$mobWidth + px}) {
+        #{$property}: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 360px) / #{$maxWidth - 360}));
+    }
+}

@@ -1,0 +1,53 @@
+.main {
+    padding: 200px 0 78px;
+    background: url("../img/main/bg.jpg") no-repeat center center / 100% 100%;
+    
+    &__content {
+        text-align: center;
+    }
+    &__title {
+        // @include adaptiv-value("margin-bottom", 23, 15, 10);
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 99.9%;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 44px;
+        line-height: 115.9%;
+        letter-spacing: -0.01em;
+        margin-bottom: 160px;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 145px;
+      text-align: start;
+      margin-bottom: 75px;
+    }
+
+    &__item {
+      font-size: 24px;
+      line-height: 29px;
+      position: relative;
+      font-weight: 500;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        background-color: #FF005C;
+        left: -30px;
+        top: 5px;
+      }
+    }
+
+    &__button {
+        max-width: 270px;
+        height: 70px;
+        margin: 0 auto;
+    }
+}

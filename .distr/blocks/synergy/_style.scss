@@ -1,0 +1,75 @@
+.synergy {
+    background: $red;
+    color: #fff;
+    padding: 50px 0 100px;
+    &__title {
+        text-align: center;
+        max-width: 830px;
+        width: 100%;
+        margin: 0 auto 100px auto;
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 100%;
+        margin-bottom: 45px;
+    }
+    &__box {
+        position: relative;
+        margin-bottom: 140px;
+        &::after {
+            content: "";
+            background: url("../img/synergy/picture.png") no-repeat center center / cover;
+            position: absolute;
+            top: -35px;
+            right: -13%;
+            max-width: 1156px;
+            width: 100%;
+            height: 642px;
+            display: block;
+        }
+    }
+
+    &__content {
+        
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        li {
+            font-size: 30px;
+            line-height: 100%;
+            color: #ffffff;
+            margin-bottom: 30px;
+            max-width: 590px;
+            width: 100%;
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                background: #fff;
+                border-radius: 100%;
+                display: inline-block;
+                position: relative;
+                top: -5px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                max-width: 560px;
+            }
+        }
+    }
+
+    &__form {
+        // background: #fff;
+        padding: 0;
+        position: relative;
+        border-radius: 30px;
+        .form {
+            box-shadow: none;
+            &__title {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.mission {
+    padding: 175px 0 90px;
+    &__box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        display: grid;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        p {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            display: block;
+            color: #18191f;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

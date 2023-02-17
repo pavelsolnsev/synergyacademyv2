@@ -1,0 +1,22 @@
+.popup-reg {
+    @media (max-width: 991px) {
+        max-width: 320px;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    @media (max-width: 767px) {
+    }
+
+    @media (max-width: 575px) {
+    }
+}
+
+.popup-menu {
+    @media (max-width: 1199px) {
+        .fancybox-close-small {
+            right: 0 !important;
+            top: 0px !important;
+        }
+    }
+}

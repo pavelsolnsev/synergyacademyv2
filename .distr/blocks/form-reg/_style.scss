@@ -1,0 +1,21 @@
+.form-reg {
+    background: #fff;
+    padding: 10px 0 50px;
+    &.section_1 {
+        .form {
+            &__title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &.section_2 {
+        background: $red;
+        padding: 102px 0;
+    }
+    .form {
+        box-shadow: 0px 0px 34px -19px $red;
+        padding: 55px;
+        border-radius: 30px;
+        background: #FFFFFF;
+    }
+}
